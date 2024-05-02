@@ -16,4 +16,6 @@ jobs:
         java-version: '17'
         distribution: 'oracle'
     - name: Maven clean Install
-      run: mvn clean install
+      run: |
+        cd helloworld
+        mvn clean install
