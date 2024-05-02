@@ -6,7 +6,13 @@ on:
    branches: [master]
 jobs:
   test:
-    runs-on: alpine:latest
+    runs-on: ubuntu-latest
     steps:
     - name: checkout code
       uses: actions/checkout@v4
+    - name: setup JDK
+      uses: actions/setup-java@v2
+      with:
+        java-version: '8'
+    - name: Maven clean Install
+      run: mvn clean install
