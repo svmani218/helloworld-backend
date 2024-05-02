@@ -13,7 +13,7 @@ jobs:
     - name: setup JDK
       uses: actions/setup-java@v4.2.1
       with:
-        java-version: '8'
+        java-version: '17'
         distribution: 'oracle'
     - name: Maven clean Install
       run: mvn clean install
