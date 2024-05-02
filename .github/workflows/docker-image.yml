@@ -14,5 +14,6 @@ jobs:
       uses: actions/setup-java@v4.2.1
       with:
         java-version: '8'
+        distribution: 'oracle'
     - name: Maven clean Install
       run: mvn clean install
